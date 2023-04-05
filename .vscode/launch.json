@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug Run (server)",
+      "program": "${workspaceFolder:vapor-with-react}/server/.build/debug/Run",
+      "args": [],
+      "cwd": "${workspaceFolder:vapor-with-react}/server",
+      "preLaunchTask": "swift: Build Debug Run (server)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release Run (server)",
+      "program": "${workspaceFolder:vapor-with-react}/server/.build/release/Run",
+      "args": [],
+      "cwd": "${workspaceFolder:vapor-with-react}/server",
+      "preLaunchTask": "swift: Build Release Run (server)"
+    }
+  ]
+}
